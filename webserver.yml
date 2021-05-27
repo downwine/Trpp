@@ -8,3 +8,8 @@
       name: nginx-light
       state: latest
       update_cache: true
+  - name: nginx enabled and running
+    service:
+      name: nginx
+      enabled: true
+      state: started
