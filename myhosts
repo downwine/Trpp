@@ -2,3 +2,4 @@
 host01
 [all:vars]
 my_name=Default student name
+has_8080=True
