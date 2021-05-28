@@ -1,0 +1,15 @@
+---
+- name: manage cowsay+docker
+  hosts: group1
+  become: true
+
+  vars:
+    my_name: Alekseeva Ksenia
+ 
+  tasks:
+  - name: Install cowsay
+    apt: 
+      name: cowsay 
+      state: latest 
+      update_cache: true
+
