@@ -8,7 +8,6 @@
     copy:
       src: web-8080.conf
       dest: /etc/nginx/sites-enabled/
-    when: has_8080
     notify:
       - reload_nginx
 
